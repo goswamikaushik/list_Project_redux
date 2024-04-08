@@ -19,8 +19,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://goswamikaushik.github.io/list_Project_redux",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -40,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.4.1"
+    "@faker-js/faker": "^8.4.1",
+    "gh-pages": "^6.1.1"
   }
 }
